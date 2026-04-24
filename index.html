@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XREPOT | Redefiniendo el Futuro</title>
+    <meta name="description" content="XREPOT: El próximo gran ecosistema tecnológico. Descubre qué es y prepárate para nuestro lanzamiento oficial.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-gradient-top"></div>
+    <div class="bg-gradient-bottom"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">XREPOT</div>
+            <div class="nav-links">
+                <a href="#vision" class="nav-link">Visión</a>
+                <a href="#tecnologia" class="nav-link">Tecnología</a>
+                <a href="#ecosistema" class="nav-link">Ecosistema</a>
+                <a href="#lanzamiento" class="nav-link">Lanzamiento</a>
+            </div>
+            <button class="nav-cta" onclick="focusEmailInput()">Notificarme</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-content fade-in-up">
+                <h2 class="pre-title">Próximamente</h2>
+                <h1 class="hero-title">El poder del mañana,<br><span class="text-gradient">en tus manos hoy.</span></h1>
+                <p class="hero-subtitle">XREPOT no es solo un producto de software. Es un ecosistema de hardware neuronal y algoritmos avanzados que difumina la línea entre la intuición humana y la capacidad computacional pura.</p>
+                
+                <div class="countdown-container">
+                    <div class="countdown-item">
+                        <span id="days" class="countdown-number">00</span>
+                        <span class="countdown-label">Días</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span id="hours" class="countdown-number">00</span>
+                        <span class="countdown-label">Horas</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span id="minutes" class="countdown-number">00</span>
+                        <span class="countdown-label">Min.</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span id="seconds" class="countdown-number">00</span>
+                        <span class="countdown-label">Seg.</span>
+                    </div>
+                </div>
+
+                <div class="cta-group">
+                    <div class="input-glass">
+                        <input type="email" placeholder="Tu correo electrónico" class="email-input" id="early-access-email">
+                        <button class="btn-primary" onclick="submitEarlyAccess()">Aviso Temprano</button>
+                    </div>
+                    <p class="privacy-note">Unete a la élite de los primeros adoptantes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="details-section" id="vision">
+            <div class="section-header reveal">
+                <h2 class="section-title">Una nueva era en la interacción.</h2>
+                <p class="section-description">Hemos reconstruido la arquitectura desde cero. XREPOT procesa información a la velocidad de tus pensamientos, eliminando barreras de hardware tradicional mediante micro-procesadores cuánticos de consumo.</p>
+            </div>
+
+            <!-- Bento Grid -->
+            <div class="bento-grid" id="tecnologia">
+                <div class="bento-card card-large glass reveal">
+                    <div class="card-icon">✧</div>
+                    <h3>Motor Neural X1</h3>
+                    <p>En el núcleo de cada dispositivo XREPOT reside nuestro Motor Neural X1. Capaz de realizar 450 billones de operaciones por segundo, aprende de tus hábitos sin enviar un solo byte a la nube. La inteligencia hiper-personalizada es ahora una realidad en tiempo real.</p>
+                    <div class="mockup-abstract x-mockup-1">
+                        <div class="core-pulse"></div>
+                    </div>
+                </div>
+                
+                <div class="bento-card card-medium glass reveal">
+                    <div class="card-icon">⚲</div>
+                    <h3>Hiper-Enlace Cuántico</h3>
+                    <p>Las redes Wi-Fi convencionales son obsoletas. Nuestro protocolo propietario transmite energía e información mediante frecuencias sub-atómicas, con 0 latencia.</p>
+                </div>
+
+                <div class="bento-card card-medium glass reveal">
+                    <div class="card-icon">⛨</div>
+                    <h3>Búnker de Datos Biométrico</h3>
+                    <p>Seguridad infranqueable avalada por la estructura de tu ADN. Desbloqueo mediante reconocimiento de fluidos capilares en pantalla. Inhackeable.</p>
+                </div>
+
+                <div class="bento-card card-wide glass reveal">
+                    <div class="card-content-side">
+                        <h3>Interfaz Fluida Autónoma</h3>
+                        <p>No hay escritorio. No hay aplicaciones fijas. Nuestro sistema genera la interfaz que necesitas dinámicamente en el momento exacto en que la requieres, fusionando IA generativa con entornos holográficos.</p>
+                    </div>
+                    <div class="mockup-abstract x-mockup-2"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Hardware Section -->
+        <section class="hardware-section details-section" id="ecosistema">
+            <div class="section-header reveal">
+                <h2 class="section-title">Hardware concebido en el año 3000.</h2>
+                <p class="section-description">Olvídate de pantallas planas y metales fríos. Nuestra línea XREPOT Series Z se moldea a ti con materiales biomiméticos inteligentes.</p>
+            </div>
+
+            <div class="hardware-grid">
+                <div class="hardware-card glass reveal">
+                    <div class="hardware-image hw-1"></div>
+                    <h4>XREPOT Sphere</h4>
+                    <p>El nodo central de tu hogar. Un orbe flotante antimagnético que proyecta pantallas hápticas tridimensionales en el aire a tu alrededor.</p>
+                </div>
+                <div class="hardware-card glass reveal delay-1">
+                    <div class="hardware-image hw-2"></div>
+                    <h4>XREPOT Cortex Band</h4>
+                    <p>Correa ultraligera capaz de leer impulsos nerviosos periféricos. Escribe textos o programa aplicaciones completas sin mover los dedos.</p>
+                </div>
+                <div class="hardware-card glass reveal delay-2">
+                    <div class="hardware-image hw-3"></div>
+                    <h4>XREPOT Aero-Lens</h4>
+                    <p>Lentes de contacto con tecnología micro-OLED. El mundo real combinado con un metatarso digital de infinito detalle visual.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline-section" id="lanzamiento">
+            <div class="section-header reveal">
+                <h2 class="section-title">El camino al lanzamiento.</h2>
+                <p class="section-description">Nuestra hoja de ruta hiper-detallada hacia el amanecer de una nueva humanidad digital.</p>
+            </div>
+
+            <div class="timeline reveal">
+                <div class="timeline-step">
+                    <div class="step-marker active"></div>
+                    <div class="step-content">
+                        <h4>HOY — Registro Inicial (Fase Alpha)</h4>
+                        <p>Aceleración de fábricas biotecnológicas y registro cerrado. Solo aquellos con invitación pueden entrar a la red cuántica preliminar.</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-marker"></div>
+                    <div class="step-content">
+                        <h4>Trimestre Próximo — Revelación del Software Base</h4>
+                        <p>El primer evento holográfico descentralizado. Un millón de transmisiones directas al hardware de realidad aumentada en las casas de la prensa.</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-marker"></div>
+                    <div class="step-content">
+                        <h4>Mes -1 — Distribución de Prototipos de Contenedor</h4>
+                        <p>Entrega global del Sphere, el nodo que habilitará la energía y conectividad para los accesorios futuros.</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-marker glow"></div>
+                    <div class="step-content">
+                        <h4 class="text-gradient">El Gran Despertar: XREPOT 1.0</h4>
+                        <p>Activación total del cerebro central de XREPOT y venta pública global de los Cortex Bands. Interacción instantánea entre humanos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="brand">XREPOT</div>
+            <div class="footer-links">
+                <a href="#" onclick="openModal('modal-privacidad')">Términos de Privacidad</a>
+                <a href="#" onclick="openModal('modal-terminos')">Términos de Servicio</a>
+                <a href="#" onclick="openModal('modal-prensa')">Prensa Comercial</a>
+            </div>
+            <div class="copyright">
+                &copy; 2026 XREPOT Inc. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Modals for Legal and Press -->
+    <div class="modal-overlay" id="modal-privacidad">
+        <div class="modal-content glass">
+            <div class="modal-header">
+                <h2>Política de Privacidad Integral</h2>
+                <button class="close-btn" onclick="closeModal('modal-privacidad')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>En <strong>XREPOT</strong>, asumimos el rol de absolutos protectores de su integridad humana-digital. Su privacidad no es una concesión, es un mandato sub-atómico de nuestra arquitectura.</p>
+                <br>
+                <h3>1. Recopilación Externa Nula (Zero-Cloud)</h3>
+                <p>Ningún dato biológico, neuronal o interaccional generado mediante el uso de accesorios como el XREPOT Cortex Band o Aero-Lens transita por la red pública (Internet). Es procesado endógenamente mediante nuestro hiper-procesador local descentralizado.</p>
+                <br>
+                <h3>2. Bio-Autenticación Definitiva</h3>
+                <p>Los archivos biométricos, que se recopilan únicamente durante la configuración por medio de nano-escaneo dérmico, jamás pueden ser extraídos del chip central enclaveado de los dispositivos Sphere, dada su encriptación homomórfica de nivel quántico de 4096-bit.</p>
+                <br>
+                <h3>3. Derechos de Eliminación de Conciencia Digital</h3>
+                <p>El usuario posee el derecho final a la total terminación de todos sus algoritmos espejo (IA entrenada local). Con una simple directiva confirmada, su modelo digital sobre-escribirá sus vectores de peso en nulas absolutas con ruido estocástico nivel militar, sin chance matemático de recuperación.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-terminos">
+        <div class="modal-content glass">
+            <div class="modal-header">
+                <h2>Términos Universales de Servicio</h2>
+                <button class="close-btn" onclick="closeModal('modal-terminos')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Al acceder, comprar o portar equipos y software del ecosistema interno de <strong>XREPOT</strong>, el Usuario adhiere a los siguientes términos estrictos.</p>
+                <br>
+                <h3>Responsabilidad Sináptica</h3>
+                <p>XREPOT Corporation no se responsabiliza por la disonancia cognitiva inicial que pudiese ocurrir al conectar sus redes nerviosas a los dispositivos Aero-Lens o Cortex Band durante el primer uso. Este período de ajuste cerebral de "latencia cero" requiere tiempo adaptativo.</p>
+                <br>
+                <h3>Uso de Entornos Inteligentes</h3>
+                <p>Se otorga una licencia perpetua no revocarle siempre y cuando el usuario no modifique los frenos éticos implantados en el motor Neural X1. Tratativas maliciosas destinadas a subvertir protocolos de seguridad de otros humanos generará la de-sincronización remota del hardware adquirido.</p>
+                <br>
+                <h3>Propiedad Intelectual y Modificaciones</h3>
+                <p>Cualquier modificación física del Hardware ("hacking del equipo vital") interrumpe los campos magnéticos integrados y anulará tanto la garantía como las operaciones críticas del aparato de manera irreversible y permanente forzando la degradación del silicio-biomimético inteligente.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-prensa">
+        <div class="modal-content glass">
+            <div class="modal-header">
+                <h2>Kit de Prensa y Medios (PressRoom)</h2>
+                <button class="close-btn" onclick="closeModal('modal-prensa')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Bienvenido a la red exclusiva para corresponsales internacionales. En la era de la información, el periodismo tecnológico exige verdad inquebrantable e imaginería nítida sin precedentes.</p>
+                <br>
+                <h3>Acerca de XREPOT ("Qué hace esta empresa")</h3>
+                <p>XREPOT Inc. se fundó en secreto en 2019 de la colaboración de mentes cuánticas especializadas, astrofísicos y diseñadores de materiales. Nuestra misión es el reemplazo inter-generacional de la computadora tradicional por periféricos de expansión biológica no invasiva.</p>
+                <br>
+                <h3>Recursos Autorizados</h3>
+                <ul>
+                    <li><strong>Logotipos 3D Alta Densidad:</strong> Permiso de uso exclusivo bajo el protocolo de Identidad Visual Alpha.</li>
+                    <li><strong>Transmisiones Holográficas:</strong> Archivos disponibles en formato .vpx (Visión Espacial Próxima) tras verificación de su medio informativo.</li>
+                    <li><strong>Entrevistas:</strong> Nuestro CEO no utiliza redes convencionales; todas las entrevistas de prensa se procesan por nuestra matriz central bajo petición protocolar.</li>
+                </ul>
+                <br>
+                <p><em>Para contacto urgente vía espectro amplio, escriba un correo tradicional (pronto obsoleto) a: prensa@xrepot-vision.zero</em></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
