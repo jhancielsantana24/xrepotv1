@@ -13,6 +13,27 @@ const PORT = 3000;
 // Middleware
 app.use(cors());
 app.use(express.json());
+
+// Webhook de Discord para registrar visitas
+app.use((req, res, next) => {
+    if (req.path === '/' || req.path === '/index.html') {
+        // Obtener la IP considerando si está detrás de un proxy (como Nginx)
+        const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
+        const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
+        
+        if (webhookUrl) {
+            fetch(webhookUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    content: `🔔 **Nueva Visita Detectada**\n🌐 **IP:** \`${ip}\`\n📅 **Fecha:** ${new Date().toLocaleString()}`
+                })
+            }).catch(err => console.error("Error al enviar webhook a Discord:", err));
+        }
+    }
+    next();
+});
+
 // Servir todos los archivos web visuales
 app.use(express.static(__dirname));
 
